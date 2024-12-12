@@ -63,7 +63,7 @@ def predict_emotion(img):
 
 # Streamlit app
 st.title("Emotion-Based Movie Recommendation App") # Custom CSS for styling 
-st.markdown( """ <style> .stApp { background-color: red; } .title { color: blue; font-size: 40px; font-family: 'Trebuchet MS', sans-serif; } .subtitle { color: #333333; font-size: 24px; font-family: 'Trebuchet MS', sans-serif; } .recommendation { color: #008080; font-size: 30px; font-family: 'Trebuchet MS', sans-serif; } .stButton>button { background-color: #ff4b4b; color: white; border-radius: 8px; font-size: 18px; font-family: 'Trebuchet MS', sans-serif; } </style> """, unsafe_allow_html=
+st.markdown( """ <style> .stApp { background-color: red; } .title { color: blue; font-size: 40px; font-family: 'Trebuchet MS', sans-serif; } .subtitle { color: #333333; font-size: 24px; font-family: 'Trebuchet MS', sans-serif; } .recommendation { color: #008080; font-size: 30px; font-family: 'Trebuchet MS', sans-serif; } .stButton>button { background-color: #ff4b4b; color: white; border-radius: 8px; font-size: 18px; font-family: 'Trebuchet MS', sans-serif; } </style> """, unsafe_allow_html=True)
 st.markdown("<h1 class='title'>Emotion-Based Movie Recommendation App</h1>", unsafe_allow_html=True) 
 # Camera input
 img_file = st.camera_input("Take a picture")
