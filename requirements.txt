@@ -1,9 +1,10 @@
 pandas
 matplotlib
 seaborn
-opencv-python==4.5.5.64
 streamlit
 tensorflow==2.18.0
 keras
 numpy
 tqdm
+opencv-python-headless==4.5.5.64
+
