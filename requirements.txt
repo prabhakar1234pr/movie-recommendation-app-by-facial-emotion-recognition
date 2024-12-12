@@ -5,6 +5,7 @@ keras
 tqdm
 streamlit==1.41.0
 tensorflow==2.18.0
-opencv-python==4.5.5.64
+opencv-python-headless==4.5.5.64
 numpy==1.26.0
+
 
