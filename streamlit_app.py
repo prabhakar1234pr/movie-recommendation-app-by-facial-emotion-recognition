@@ -60,30 +60,22 @@ def predict_emotion(img):
     max_index = np.argmax(predictions[0])
     return emotions[max_index]
 
-# Streamlit app
-st.title("Emotion-Based Movie Recommendation App")
 
+# Streamlit app
+st.title("Emotion-Based Movie Recommendation App") # Custom CSS for styling 
+st.markdown( """ <style> .stApp { background-color: #f0f0f5; } .title { color: #ff4b4b; font-size: 40px; font-family: 'Trebuchet MS', sans-serif; } .subtitle { color: #333333; font-size: 24px; font-family: 'Trebuchet MS', sans-serif; } .recommendation { color: #008080; font-size: 30px; font-family: 'Trebuchet MS', sans-serif; } .stButton>button { background-color: #ff4b4b; color: white; border-radius: 8px; font-size: 18px; font-family: 'Trebuchet MS', sans-serif; } </style> """, unsafe_allow_html=True )
+st.markdown("<h1 class='title'>Emotion-Based Movie Recommendation App</h1>", unsafe_allow_html=True) 
 # Camera input
 img_file = st.camera_input("Take a picture")
-
-if img_file:
-    # Convert file to an OpenCV image
+if img_file: 
+# Convert file to an OpenCV image 
     file_bytes = np.asarray(bytearray(img_file.read()), dtype=np.uint8)
-    img = cv2.imdecode(file_bytes, 1)
-
-    # Predict emotion
-    emotion = predict_emotion(img)
-    
-    # Display the image and prediction
-    st.image(img, channels="BGR")
-    st.write(f"The predicted emotion is: {emotion}")
-    
+    img = cv2.imdecode(file_bytes, 1) # Predict emotion
+    emotion = predict_emotion(img) # Display the image and prediction
+    st.image(img, channels="BGR") st.markdown(f"<h2 class='subtitle'>The predicted emotion is: {emotion}</h2>", unsafe_allow_html=True)
     # Recommend a random movie based on the predicted emotion
-    st.write("Movie Recommendation:")
     recommended_movie = random.choice(movie_recommendations[emotion])
-    st.write(recommended_movie)
-
-# Run the Streamlit app
+    st.markdown(f"<h2 class='recommendation'>Movie Recommendation: {recommended_movie}</h2>", unsafe_allow_html=True)
+    # Run the Streamlit app
 if __name__ == "__main__":
-    st.write("Take a picture using the camera input above to detect the emotion and get a movie recommendation.")
-
+    st.markdown("<h2 class='subtitle'>Take a picture using the camera input above to detect the emotion and get a movie recommendation.</h2>", unsafe_allow_html=True)
