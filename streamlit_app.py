@@ -72,7 +72,8 @@ if img_file:
     file_bytes = np.asarray(bytearray(img_file.read()), dtype=np.uint8)
     img = cv2.imdecode(file_bytes, 1) # Predict emotion
     emotion = predict_emotion(img) # Display the image and prediction
-    st.image(img, channels="BGR") st.markdown(f"<h2 class='subtitle'>The predicted emotion is: {emotion}</h2>", unsafe_allow_html=True)
+    st.image(img, channels="BGR")
+    st.markdown(f"<h2 class='subtitle'>The predicted emotion is: {emotion}</h2>", unsafe_allow_html=True)
     # Recommend a random movie based on the predicted emotion
     recommended_movie = random.choice(movie_recommendations[emotion])
     st.markdown(f"<h2 class='recommendation'>Movie Recommendation: {recommended_movie}</h2>", unsafe_allow_html=True)
