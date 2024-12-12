@@ -4,7 +4,7 @@ seaborn
 streamlit
 tensorflow==2.18.0
 keras
-numpy
+numpy==1.21.6
 tqdm
 opencv-python-headless==4.5.5.64
 
