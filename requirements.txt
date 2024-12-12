@@ -1,0 +1,10 @@
+pandas
+matplotlib
+seaborn
+tensorflow
+streamlit
+opencv-contrib-python
+keras
+numpy
+tqdm
+ImageDataGenerator
