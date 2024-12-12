@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 import random
 
 # Load the trained model
-model = load_model(r'venv\emotion_detection_model.keras')
+model = load_model(r'emotion_detection_model.keras')
 
 # Emotion categories
 emotions = ['anger', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral']
