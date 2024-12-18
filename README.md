@@ -1,4 +1,4 @@
-### Emotion-Based Movie Recommendation System
+## Emotion-Based Movie Recommendation System
 ## Introduction
 This project implements an innovative emotion-based movie recommendation system using machine learning and computer vision techniques. The system captures a user's facial expression through a camera, predicts their emotional state, and recommends a movie based on the detected emotion. This unique approach to movie recommendations aims to provide a personalized and engaging user experience by aligning film suggestions with the viewer's current emotional state.
 ## Project Overview
@@ -6,7 +6,7 @@ The core of this project lies in the integration of emotion detection technology
 Emotion Detection Model: A Convolutional Neural Network (CNN) trained on facial expression images forms the backbone of the emotion detection system. This model can classify facial expressions into seven categories: anger, disgust, fear, happiness, sadness, surprise, and neutral.
 Movie Database: A carefully curated list of movies is associated with each emotion category. These associations are based on the general mood and themes of the films, ensuring that the recommendations align with the detected emotion.
 Web Application: The user interface is built using Streamlit, providing an intuitive and interactive experience for users to capture their image and receive movie recommendations.
-### How the Project Was Developed
+## How the Project Was Developed
 ## Data Collection and Preprocessing
 The project began with the collection of a diverse dataset of facial expression images. These images were preprocessed to ensure consistency in size (48x48 pixels) and color (grayscale). Data augmentation techniques such as rotation, width and height shifts, and horizontal flips were applied to enhance the model's robustness.
 ## Model Architecture and Training
