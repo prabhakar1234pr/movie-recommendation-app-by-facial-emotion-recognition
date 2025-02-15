@@ -62,7 +62,7 @@ def predict_emotion(img):
 
 
 # Streamlit app
-st.title("Emotion-Based Movie Recommendation App") # Custom CSS for styling 
+ # Custom CSS for styling 
 st.markdown(
     """
     <style>
