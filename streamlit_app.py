@@ -63,8 +63,54 @@ def predict_emotion(img):
 
 # Streamlit app
 st.title("Emotion-Based Movie Recommendation App") # Custom CSS for styling 
-st.markdown( """ <style> .stApp { background-color: red; } .title { color: blue; font-size: 40px; font-family: 'Trebuchet MS', sans-serif; } .subtitle { color: #333333; font-size: 24px; font-family: 'Trebuchet MS', sans-serif; } .recommendation { color: #008080; font-size: 30px; font-family: 'Trebuchet MS', sans-serif; } .stButton>button { background-color: #ff4b4b; color: white; border-radius: 8px; font-size: 18px; font-family: 'Trebuchet MS', sans-serif; } </style> """, unsafe_allow_html=True)
-st.markdown("<h1 class='title'>Emotion-Based Movie Recommendation App</h1>", unsafe_allow_html=True) 
+st.markdown(
+    """
+    <style>
+        .stApp {
+            background-color: #1E1E1E;
+            padding: 20px;
+        }
+        .title {
+            color: #FFD700;
+            font-size: 45px;
+            font-family: 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-family: 'Trebuchet MS', sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .recommendation {
+            color: #00BFFF;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        .stButton>button {
+            background-color: #FF4500;
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', sans-serif;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .stButton>button:hover {
+            background-color: #E63900;
+        }
+    </style>
+    """, 
+    unsafe_allow_html=True
+)
+
+st.markdown("<h1 class='title'>🎭 Emotion-Based Movie Recommendation App 🎬</h1>", unsafe_allow_html=True)
+ 
 # Camera input
 img_file = st.camera_input("Take a picture")
 if img_file: 
