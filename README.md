@@ -1,4 +1,6 @@
 ## Emotion-Based Movie Recommendation System
+You can view the live app here : https://movie-recommendation-app-by-facial-emotion-recognition-jgvnkum.streamlit.app/
+
 ## Introduction
 This project implements an innovative emotion-based movie recommendation system using machine learning and computer vision techniques. The system captures a user's facial expression through a camera, predicts their emotional state, and recommends a movie based on the detected emotion. This unique approach to movie recommendations aims to provide a personalized and engaging user experience by aligning film suggestions with the viewer's current emotional state.
 ## Project Overview
